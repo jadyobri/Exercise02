@@ -131,7 +131,7 @@ class Play extends Phaser.Scene {
         this.input.on("pointerdown", (pointer)=>{
             this.shotted++;
             if(this.hole > 0){
-                this.percentage = Math.Round(this.hole*100/this.shotted)
+                this.percentage = this.hole*100/this.shotted;
                 this.percented.text = "shot%:" + this.percentage + "%";
             }
             this.shotten.text = "shot: "+ this.shotted;
